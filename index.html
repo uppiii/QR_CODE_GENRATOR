@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Theme toggle -->
+  <button id="theme-toggle" title="Toggle Theme">🌓</button>
+
+  <div class="user-input-section">
+    <section class="heading">
+      <div class="title">QRcodes</div>
+      <div class="sub-title">Generate QR Code for anything!</div>
+    </section>
+
+    <section class="user-input">
+      <input
+        type="text"
+        placeholder="Type something..."
+        name="input_text"
+        id="input_text"
+        autocomplete="off"
+      />
+      <div class="input-actions">
+        <button class="button" type="submit">Generate</button>
+        <button id="clear-btn" type="button">Clear</button>
+      </div>
+      <p id="message" class="message"></p>
+    </section>
+  </div>
+
+  <div class="qr-code-container">
+    <div class="qr-code"></div>
+  </div>
+
+  <!-- QR code library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <!-- Your enhanced JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
